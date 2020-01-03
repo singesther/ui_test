@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Luxury Maids</title>
+  <script src="https://kit.fontawesome.com/22ded3b2d5.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/sidebar.js">
+</head>
+
+<body>
+
+  <!-- navigation bar -->
+  <nav class="nav-menu">
+    <div id="btntoggle" onclick="displaySideBar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="logoo">
+      <img src="assets/logo/capture.png" alt="Luxury Maids">
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="html/Req.html">Request</a></li>
+      <li><a href="./html/userTomaid.html">Admin</a></li>
+      <li><a href="./html/login.html">Login</a></li>
+      <li><a href="html/signup.html" id="signUpBtn">Sign up</a></li>
+      <li><a href="#" id="userInfos"><img src="assets/icons/user.svg" alt="user-infos" onclick="window.location.href='html/viewAllmaid.html'"></a></li>
+    </ul>
+  </nav>
+  <!-- sidebar when toggle button clicked -->
+  <div id="sidebar">
+    <ul>
+      <li id="close" onclick="closebtn()">&times;</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="./html/userTomaid.html">Admin</a></li>
+      <li><a href="html/signup.html">SignUp</a></li>
+      <li><a href="html/login.html">Login</a></li>
+      <li><a href="html/maidBoard.html">maid Board</a></li>
+    </ul>
+  </div>
+  <!--At the Beginning index page----->
+  <div class="containerIndex">
+    <div class="homeImage">
+      <div class="imagess">
+        <img src="assets/images/coach.jpeg" alt="maids-inspire">
+      </div>
+      <div id="inspireWords">
+        <blockquote>"Choose one you want today and be free"</blockquote>
+      </div>
+      <div class="btnHome">
+        <button id="homeBtn" onclick="window.location.href='html/Req.html'">Get a Maid</button>
+      </div>
+
+    </div>
+    <div class="maids" id="topmaid">
+      <h2>Top maids</h2>
+      <ul>
+        <li>
+          <figure>
+            <img src="assets/images/kenya.jpg" alt="maid-image">
+            <figcaption>- Alice Eistein</figcaption>
+            <blockquote>In house cleanning,!</blockquote>
+          </figure>
+          <div class="icon">
+            <a href="./html/viewmaid.html">View maid</a>
+            <img src="assets/icons/comment.svg" alt="comment" onclick="displayReview()">
+          </div>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/images/ug.jpg" alt="maid-image">
+            <figcaption>- Aline</figcaption>
+            <blockquote>In house cleanning</blockquote>
+          </figure>
+          <div>
+            <a href="./html/viewmaid.html">View maid</a>
+            <img src="assets/icons/comment.svg" alt="comment" onclick="displayReview()">
+          </div>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/images/uga.jpg" alt="maid-image">
+            <figcaption>- Aliane King</figcaption>
+            <blockquote>In cooking</blockquote>
+          </figure>
+          <div>
+            <a href="./html/viewmaid.html">View maid</a>
+            <img src="assets/icons/comment.svg" alt="comment" onclick="displayReview()">
+          </div>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/images/white.jpg" alt="maid-image">
+            <figcaption>- Cleaner</figcaption>
+            <blockquote>Cleanner</blockquote>
+
+          </figure>
+          <div>
+            <a href="./html/viewmaid.html">View maid</a>
+            <img src="assets/icons/comment.svg" alt="comment" onclick="displayReview()">
+          </div>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/images/rda.jpg" alt="maid-image">
+            <figcaption>- Bob Marley</figcaption>
+            <blockquote>Cleanner</blockquote>
+          </figure>
+          <div>
+            <a href="./html/viewmaid.html">View maid</a>
+            <img src="assets/icons/comment.svg" alt="comment" onclick="displayReview()">
+          </div>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/images/uga.jpg" alt="maid-image">
+            <figcaption>- Miss </figcaption>
+            <blockquote>cleanning</blockquote>
+          </figure>
+          <div>
+            <a href="././html/viewmaid.html">View maid</a>
+            <img src="assets/icons/comment.svg" alt="comment" onclick="displayReview()">
+          </div>
+        </li>
+
+        <div class="viewMore viewAll">
+          <a href="#othermaids" onclick="showMoremaids()">See More maids</a>
+        </div>
+      </ul>
+
+      <h2 id="othermaids">Other maids</h2>
+<!-- More maids --------------------------------->
+      <ul class="moremaid">
+          
+        <li>
+          <figure>
+            <img src="assets/images/ug.jpg" alt="maid-image">
+            <figcaption>- Jeanne Karamage</figcaption>
+            <blockquote>cleanning</blockquote>
+          </figure>
+          <div>
+            <a href="./html/viewmaid.html">View maid</a>
+            <img src="assets/icons/comment.svg" alt="comment" onclick="displayReview()">
+          </div>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/images/kenya.jpg" alt="maid-image">
+            <figcaption>- Jeanne Karamage</figcaption>
+            <blockquote>cleanning</blockquote>
+          </figure>
+          <div>
+            <a href="./html/viewmaid.html">View maid</a>
+            <img src="assets/icons/comment.svg" alt="comment" onclick="displayReview()">
+          </div>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/images/uga.jpg" alt="maid-image">
+            <figcaption>- Jeanne Karamage</figcaption>
+            <blockquote>cleanning</blockquote>
+          </figure>
+          <div>
+            <a href="./html/viewmaid.html">View maid</a>
+            <img src="assets/icons/comment.svg" alt="comment" onclick="displayReview()">
+          </div>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/images/rda.jpg" alt="maid-image">
+            <figcaption>- Jeanne Karamage</figcaption>
+            <blockquote>cleanning</blockquote>
+          </figure>
+          <div>
+            <a href="./html/viewmaid.html">View maid</a>
+            <img src="assets/icons/comment.svg" alt="comment" onclick="displayReview()">
+          </div>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/images/white.jpg" alt="maid-image">
+            <figcaption>- Jeanne Karamage</figcaption>
+            <blockquote>In Social Behavior</blockquote>
+          </figure>
+          <div>
+            <a href="./html/viewmaid.html">View maid</a>
+            <img src="assets/icons/comment.svg" alt="comment" onclick="displayReview()">
+          </div>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/images/rda.jpg" alt="maid-image">
+            <figcaption>- Jeanne Karamage</figcaption>
+            <blockquote>cleanning</blockquote>
+          </figure>
+          <div>
+            <a href="./html/viewmaid.html">View maid</a>
+            <img src="assets/icons/comment.svg" alt="comment" onclick="displayReview()">
+          </div>
+        </li>
+     
+        <div class="viewMore" id="Lessmaid">
+          <a href="#topmaid" onclick="lessmaids()">Top maids</a>
+        </div>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="reviewmaidship">
+    
+        <h1>Review this maid</h1>
+        <form action="#">
+          <div class="reviewScore">
+            <label for="maidName"><b>Score</b></label>
+            <input type="radio" name="score" id="score" >1
+            <input type="radio" name="score" id="score">2
+            <input type="radio" name="score" id="score">3
+            <input type="radio" name="score" id="score">4
+            <input type="radio" name="score" id="score">5
+          </div>
+          <br>
+          <div class="remark">
+            <label for="maidQuestion"><b>Remark</b></label><br>
+            <textarea name="question" id="maidQuestion" cols="30" rows="10" placeholder="Remark Your maid"
+              required></textarea>
+          </div>
+          <div class="btnReviews">
+            <input type="submit" value="Review" onclick="successRequest()">
+
+            <input type="button" value="Cancel" onclick="window.location.href='index.html'">
+          </div>
+
+        </form>
+    
+  </div>
+
+  <footer>
+    <p>
+      Luxury maids &copy;
+    </p>
+  </footer>
+
+  <script src="js/sidebar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Luxury mmaids</title>
+  <script src="https://kit.fontawesome.com/22ded3b2d5.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../js/sidebar.js">
+</head>
+
+<body>
+  
+  <!-- navigation bar -->
+  <nav class="nav-menu">
+    <div id="btntoggle" onclick="displaySideBar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="logoo">
+      <img src="../assets/logo/Capture.PNG" alt="Luxury Maids">
+    </div>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="Req.html">Request</a></li>
+      <li><a href="../html/signup.html" id="signUpBtn">SignUp</a></li>
+      <li><a href="#" id="userInfos"><img src="../assets/icons/user.svg" alt="user-infos" onclick="window.location.href='./viewAllmaid.html'"></a></li>
+    </ul>
+  </nav>
+  <!-- sidebar when toggle button clicked -->
+  <div id="sidebar">
+    <ul>
+      <li id="close" onclick="closebtn()">&times;</li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../html/signup.html">SignUp</a></li>
+      <li><a href="../html/login.html">Login</a></li>
+    </ul>
+  </div>
+  <!--At the Beginning of Admin Board for change user to a maids----->
+  <div class="containerAdminChangeUser">
+    <h1>Change User To amaids</h1>
+    <table>
+      <th>FullName</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Bio</th>
+      <th>Occupation</th>
+      <th>Expertise</th>
+      <th>Action</th>
+
+      <tr>
+        <td>
+          <label for="">Kevin Klein</label>
+        </td>
+        <td>
+          <output>kevin10@mentee.com</output>
+        </td>
+        <td>
+          <output>Rwanda-Kigali</output>
+        </td>
+        <td>
+          <output>Something</output>
+        </td>
+        <td>
+          <output>cleaner</output>
+        </td>
+        <td>
+          <output>house giel</output>
+        </td>
+        <td>
+          <input type="button" onclick="mentorAgree()" value="Change Tomaids">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="">Kevin Klein</label>
+        </td>
+        <td>
+          <output>kevin10@mentee.com</output>
+        </td>
+        <td>
+          <output>Rwanda-Kigali</output>
+        </td>
+        <td>
+          <output>Something</output>
+        </td>
+        <td>
+          <output>cleaner</output>
+        </td>
+        <td>
+          <output>house giel</output>
+        </td>
+        <td>
+          <input type="button" onclick="mentorAgree()" value="Change Tomaids">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="">Kevin Klein</label>
+        </td>
+        <td>
+          <output>kevin10@mentee.com</output>
+        </td>
+        <td>
+          <output>Rwanda-Kigali</output>
+        </td>
+        <td>
+          <output>Something</output>
+        </td>
+        <td>
+          <output>cleaner</output>
+        </td>
+        <td>
+          <output>house giel</output>
+        </td>
+        <td>
+          <input type="button" onclick="mentorAgree()" value="Change Tomaids">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="">Kevin Klein</label>
+        </td>
+        <td>
+          <output>kevin10@mentee.com</output>
+        </td>
+        <td>
+          <output>Rwanda-Kigali</output>
+        </td>
+        <td>
+          <output>Something</output>
+        </td>
+        <td>
+          <output>cleaner</output>
+        </td>
+        <td>
+          <output>house giel</output>
+        </td>
+        <td>
+          <input type="button" onclick="mentorAgree()" value="Change Tomaids">
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+  <footer id="footer">
+    <p>
+      Luxury Maids &copy;
+    </p>
+  </footer>
+
+  <script src="../js/sidebar.js"></script>
+  <script src="../js/success.js"></script>
+</body>
+
+</html>
